@@ -40,7 +40,8 @@ while True:
     else:
         print("Score is out of range.")
 
-print(f"Maximum score is {find_sd(scores)[0]:.2f}.")
-print(f"Minimum score is {find_sd(scores)[1]:.2f}.")
-print(f"Average score is {find_sd(scores)[2]:.2f}.")
-print(f"Standard deviation is {find_sd(scores)[3]:.2f}.")
+if scores:
+    print(f"Maximum score is {find_sd(scores)[0]:.2f}.")
+    print(f"Minimum score is {find_sd(scores)[1]:.2f}.")
+    print(f"Average score is {find_sd(scores)[2]:.2f}.")
+    print(f"Standard deviation is {find_sd(scores)[3]:.2f}.")
